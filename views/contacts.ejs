@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Agenda de Contactos</title>
+</head>
+<body>
+  <h1>Lista de Contactos</h1>
+  <ul>
+    <% contacts.forEach(function(contact) { %>
+      <li><%= contact.name %> - <%= contact.email %> - <%= contact.phone %></li>
+    <% }); %>
+  </ul>
+</body>
+</html>
